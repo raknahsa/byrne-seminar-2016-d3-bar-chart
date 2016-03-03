@@ -64,6 +64,15 @@
 			   })
 			   .attr("fill", function(d) {
 					return "rgb(0, 0, 200)";
+			   })
+			   .attr("fill-opacity", function(d) {
+					var tmp = d[2] / 100;
+					if(tmp < .25){
+						return .25;
+					}
+					else {
+						return tmp;
+					}
 			   });
 			svg.selectAll("text")
 			   .data(dataset)
