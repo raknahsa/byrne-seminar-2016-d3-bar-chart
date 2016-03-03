@@ -66,12 +66,12 @@
 					return "rgb(0, 0, 200)";
 			   })
 			   .attr("fill-opacity", function(d) {
-					var tmp = d[2] / 75;
+					var tmp = d[2] / 100;
 					if(tmp < .25){
-						return .25;
+						return .35;
 					}
 					else {
-						return tmp;
+						return tmp + .13;
 					}
 			   });
 			svg.selectAll("text")
