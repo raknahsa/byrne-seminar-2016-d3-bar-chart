@@ -66,7 +66,7 @@
 					return "rgb(0, 0, 200)";
 			   })
 			   .attr("fill-opacity", function(d) {
-					var tmp = d[2] / 100;
+					var tmp = d[2] / 75;
 					if(tmp < .25){
 						return .25;
 					}
@@ -86,7 +86,7 @@
 			   		return i * (w / dataset.length) + (w / dataset.length - barPadding) / 2;
 			   })
 			   .attr("y", function(d) {
-			   		return h - (d[0] * 4.2);
+			   		return h - (d[0] * 4.1);
 			   })
 			   .attr("font-family", "sans-serif")
 			   .attr("font-size", "11px")
